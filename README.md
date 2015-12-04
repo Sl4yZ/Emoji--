@@ -1,4 +1,4 @@
-# Emoji--
+# Emoji++
 A cool program that makes you able to use Android and iOS emojis for Facebook on your computer !
 
 Note: This program is currently in beta mode, here is the list of what does not work yet :
