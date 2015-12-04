@@ -15,3 +15,5 @@ How to :
     Install the program and open it,
     Once opened, click on the emoji you want to use, it will be automatically copied into your clipboard,
     Go to your Facebook chat window and use CTRL + V to paste the smiley OR right click->Paste
+    
+</i>Compiled with Visual Studio 2013</i>
