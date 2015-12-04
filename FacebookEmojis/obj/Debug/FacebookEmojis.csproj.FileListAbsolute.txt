@@ -1,0 +1,14 @@
+c:\users\gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\bin\Debug\MetroFramework.Design.dll
+c:\users\gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\bin\Debug\MetroFramework.dll
+c:\users\gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\bin\Debug\MetroFramework.Fonts.dll
+c:\users\gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\FacebookEmojis.Properties.Resources.resources
+c:\users\gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\FacebookEmojis.csproj.GenerateResource.Cache
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\FacebookEmojis.Announce.resources
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\FacebookEmojis.Main.resources
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\FacebookEmojis.SmileyList.resources
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\bin\Debug\emojiplusplus.exe.config
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\bin\Debug\emojiplusplus.exe
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\bin\Debug\emojiplusplus.pdb
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\emojiplusplus.exe
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\emojiplusplus.pdb
+C:\Users\Gleam\documents\visual studio 2013\Projects\FacebookEmojis\FacebookEmojis\obj\Debug\FacebookEmojis.csprojResolveAssemblyReference.cache

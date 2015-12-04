@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1A70AE6-80C4-4DE7-9309-4233840C37AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FacebookEmojis</RootNamespace>
+    <AssemblyName>emojiplusplus</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hexagon_smile_smiley_smile_smiley_emotion_happy-512.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net40\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net40\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Announce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Announce.Designer.cs">
+      <DependentUpon>Announce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmileyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmileyList.Designer.cs">
+      <DependentUpon>SmileyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Announce.resx">
+      <DependentUpon>Announce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmileyList.resx">
+      <DependentUpon>SmileyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_476.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_463.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_479.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_466.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_464.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_482.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_471.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_467.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_480.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_461.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_469.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_465.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_478.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_442.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_462.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_457.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_477.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_459.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_460.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_481.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_458.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_179.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_473.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_470.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_405.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_356.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_355.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_354.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_353.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_352.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_351.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_350.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_349.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_348.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_347.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_346.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_345.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_344.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_343.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_342.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_340.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_338.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_337.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_333.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_332.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_330.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_329.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_328.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_327.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_326.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_323.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_322.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_320.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_319.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_165.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_164.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_163.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_161.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_162.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_160.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_159.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_158.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_157.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_156.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_155.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_154.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_153.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_152.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_150.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_151.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_132.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_133.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_134.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_135.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_136.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_137.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_138.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_139.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_140.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_141.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_142.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_143.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_144.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_145.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_146.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_147.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_148.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_149.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_80.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_82.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_90.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_195.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_196.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_197.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_198.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_201.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_202.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_203.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_204.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_205.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_206.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_207.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_208.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_210.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_211.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_212.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_213.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_214.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_215.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_216.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_217.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_229.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_48.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_49.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_51.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_52.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_53.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_54.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_55.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_56.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_57.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_58.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_59.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_60.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_61.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_62.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_63.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_64.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_65.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_66.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_67.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_68.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_69.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_70.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_71.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_72.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_73.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_74.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_75.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_76.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_77.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_08.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_09.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_14.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_17.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_19.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_20.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_22.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_23.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_25.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_26.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_27.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_28.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_30.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_33.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_34.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_35.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_36.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_37.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_38.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_39.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_40.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_41.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_42.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_43.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_44.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_45.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_78.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_79.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_801.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_81.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_83.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_84.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_85.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_86.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_87.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_88.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_89.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_901.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_91.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_92.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_93.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_94.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_95.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_96.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_97.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_98.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_99.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_100.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_101.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_102.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_103.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_104.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_105.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_106.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_107.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_108.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_109.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_110.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_111.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_112.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_113.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_114.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_115.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_116.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_117.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_118.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_119.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_120.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_121.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_122.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_123.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_124.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_125.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_126.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_127.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_128.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_129.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_130.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_131.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="emojiplusplus.ico" />
+    <Content Include="hexagon_smile_smiley_smile_smiley_emotion_happy-512.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
